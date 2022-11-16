@@ -1,9 +1,10 @@
 from flask import Flask, Response, render_template
 import cv2
 from keras.saving.save import load_model
-from keras_preprocessing.image.utils import img_to_array
 import numpy as np
 from flask import Flask, request, session, redirect, url_for, render_template
+from keras.utils import img_to_array
+
 from main import facial
 
 app = Flask(__name__)
